@@ -28,7 +28,6 @@ export const hi: LanguageTranslation = {
                 show_cardinality: 'कार्डिनैलिटी दिखाएँ',
                 zoom_on_scroll: 'स्क्रॉल पर ज़ूम',
                 theme: 'थीम',
-                change_language: 'भाषा बदलें',
                 show_dependencies: 'निर्भरता दिखाएँ',
                 hide_dependencies: 'निर्भरता छिपाएँ',
             },
@@ -146,6 +145,7 @@ export const hi: LanguageTranslation = {
                         change_schema: 'स्कीमा बदलें',
                         add_field: 'फ़ील्ड जोड़ें',
                         add_index: 'सूचकांक जोड़ें',
+                        duplicate_table: 'Duplicate Table', // TODO: Translate
                         delete_table: 'तालिका हटाएँ',
                     },
                 },
@@ -346,6 +346,11 @@ export const hi: LanguageTranslation = {
             format_json: 'JSON',
             cancel: 'Cancel',
             export: 'Export',
+            error: {
+                title: 'Error exporting diagram',
+                description:
+                    'Something went wrong. Need help? chartdb.io@gmail.com',
+            },
         },
         // TODO: Translate
         import_diagram_dialog: {
@@ -373,6 +378,7 @@ export const hi: LanguageTranslation = {
 
         table_node_context_menu: {
             edit_table: 'तालिका संपादित करें',
+            duplicate_table: 'Duplicate Table', // TODO: Translate
             delete_table: 'तालिका हटाएँ',
         },
 
@@ -382,10 +388,15 @@ export const hi: LanguageTranslation = {
         tool_tips: {
             double_click_to_edit: 'संपादित करने के लिए डबल-क्लिक करें',
         },
+
+        language_select: {
+            change_language: 'भाषा बदलें',
+        },
     },
 };
 
 export const hiMetadata: LanguageMetadata = {
     name: 'Hindi',
+    nativeName: 'हिन्दी',
     code: 'hi',
 };

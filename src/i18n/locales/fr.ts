@@ -15,7 +15,7 @@ export const fr: LanguageTranslation = {
                 exit: 'Quitter',
             },
             edit: {
-                edit: 'Éditer',
+                edit: 'Édition',
                 undo: 'Annuler',
                 redo: 'Rétablir',
                 clear: 'Effacer',
@@ -28,15 +28,13 @@ export const fr: LanguageTranslation = {
                 show_cardinality: 'Afficher la Cardinalité',
                 zoom_on_scroll: 'Zoom sur le Défilement',
                 theme: 'Thème',
-                change_language: 'Langue',
                 show_dependencies: 'Afficher les Dépendances',
                 hide_dependencies: 'Masquer les Dépendances',
             },
-            // TODO: Translate
             share: {
-                share: 'Share',
-                export_diagram: 'Export Diagram',
-                import_diagram: 'Import Diagram',
+                share: 'Partage',
+                export_diagram: 'Exporter le diagramme',
+                import_diagram: 'Importer un diagramme',
             },
             help: {
                 help: 'Aide',
@@ -136,6 +134,7 @@ export const fr: LanguageTranslation = {
                         title: 'Actions de la Table',
                         add_field: 'Ajouter un Champ',
                         add_index: 'Ajouter un Index',
+                        duplicate_table: 'Duplicate Table', // TODO: Translate
                         delete_table: 'Supprimer la Table',
                         change_schema: 'Changer le Schéma',
                     },
@@ -347,6 +346,11 @@ export const fr: LanguageTranslation = {
             format_json: 'JSON',
             cancel: 'Cancel',
             export: 'Export',
+            error: {
+                title: 'Error exporting diagram',
+                description:
+                    'Something went wrong. Need help? chartdb.io@gmail.com',
+            },
         },
         // TODO: Translate
         import_diagram_dialog: {
@@ -374,6 +378,7 @@ export const fr: LanguageTranslation = {
 
         table_node_context_menu: {
             edit_table: 'Éditer la Table',
+            duplicate_table: 'Duplicate Table', // TODO: Translate
             delete_table: 'Supprimer la Table',
         },
 
@@ -383,10 +388,15 @@ export const fr: LanguageTranslation = {
         tool_tips: {
             double_click_to_edit: 'Double-cliquez pour modifier',
         },
+
+        language_select: {
+            change_language: 'Langue',
+        },
     },
 };
 
 export const frMetadata: LanguageMetadata = {
-    name: 'Français',
+    name: 'French',
+    nativeName: 'Français',
     code: 'fr',
 };

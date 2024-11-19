@@ -28,7 +28,6 @@ export const en = {
                 show_cardinality: 'Show Cardinality',
                 zoom_on_scroll: 'Zoom on Scroll',
                 theme: 'Theme',
-                change_language: 'Language',
                 show_dependencies: 'Show Dependencies',
                 hide_dependencies: 'Hide Dependencies',
             },
@@ -144,6 +143,7 @@ export const en = {
                         change_schema: 'Change Schema',
                         add_field: 'Add Field',
                         add_index: 'Add Index',
+                        duplicate_table: 'Duplicate Table',
                         delete_table: 'Delete Table',
                     },
                 },
@@ -340,6 +340,11 @@ export const en = {
             format_json: 'JSON',
             cancel: 'Cancel',
             export: 'Export',
+            error: {
+                title: 'Error exporting diagram',
+                description:
+                    'Something went wrong. Need help? chartdb.io@gmail.com',
+            },
         },
 
         import_diagram_dialog: {
@@ -367,6 +372,7 @@ export const en = {
 
         table_node_context_menu: {
             edit_table: 'Edit Table',
+            duplicate_table: 'Duplicate Table',
             delete_table: 'Delete Table',
         },
 
@@ -375,10 +381,15 @@ export const en = {
         tool_tips: {
             double_click_to_edit: 'Double-click to edit',
         },
+
+        language_select: {
+            change_language: 'Language',
+        },
     },
 };
 
 export const enMetadata: LanguageMetadata = {
     name: 'English',
+    nativeName: 'English',
     code: 'en',
 };

@@ -28,15 +28,13 @@ export const ru: LanguageTranslation = {
                 show_cardinality: 'Показать множественность связи',
                 zoom_on_scroll: 'Увеличение при прокрутке',
                 theme: 'Тема',
-                change_language: 'Сменить язык',
                 show_dependencies: 'Показать зависимости',
                 hide_dependencies: 'Скрыть зависимости',
             },
-            // TODO: Translate
             share: {
-                share: 'Share',
-                export_diagram: 'Export Diagram',
-                import_diagram: 'Import Diagram',
+                share: 'Поделиться',
+                export_diagram: 'Экспорт кода диаграммы',
+                import_diagram: 'Импорт кода диаграммы',
             },
             help: {
                 help: 'Помощь',
@@ -143,6 +141,7 @@ export const ru: LanguageTranslation = {
                         change_schema: 'Изменить схему',
                         add_field: 'Добавить поле',
                         add_index: 'Добавить индекс',
+                        duplicate_table: 'Duplicate Table', // TODO: Translate
                         delete_table: 'Удалить таблицу',
                     },
                 },
@@ -229,8 +228,7 @@ export const ru: LanguageTranslation = {
 
             cancel: 'Отменить',
             back: 'Назад',
-            // TODO: Translate
-            import_from_file: 'Import from File',
+            import_from_file: 'Импортировать из файла',
             empty_diagram: 'Пустая диаграмма',
             continue: 'Продолжить',
             import: 'Импорт',
@@ -254,7 +252,7 @@ export const ru: LanguageTranslation = {
             title: 'Экспорт SQL',
             description:
                 'Экспортируйте схему диаграммы в {{databaseType}} скрипт',
-            close: 'Close',
+            close: 'Закрыть',
             loading: {
                 text: 'ИИ генерирует SQL для {{databaseType}}...',
                 description: 'Это должно занять до 30 секунд.',
@@ -335,24 +333,27 @@ export const ru: LanguageTranslation = {
             close: 'Не сейчас',
             confirm: 'Конечно!',
         },
-        // TODO: Translate
         export_diagram_dialog: {
-            title: 'Export Diagram',
-            description: 'Choose the format for export:',
+            title: 'Экспорт кода диаграммы',
+            description: 'Выберите формат экспорта:',
             format_json: 'JSON',
-            cancel: 'Cancel',
-            export: 'Export',
-        },
-        // TODO: Translate
-        import_diagram_dialog: {
-            title: 'Import Diagram',
-            description: 'Paste the diagram JSON below:',
-            cancel: 'Cancel',
-            import: 'Import',
+            cancel: 'Отменить',
+            export: 'Экспортировать',
             error: {
-                title: 'Error importing diagram',
+                title: 'Ошибка экспортирования диаграммы',
                 description:
-                    'The diagram JSON is invalid. Please check the JSON and try again. Need help? chartdb.io@gmail.com',
+                    'Что-то пошло не так. Если вам нужна помощь, напишите нам: chartdb.io@gmail.com',
+            },
+        },
+        import_diagram_dialog: {
+            title: 'Импорт кода диаграммы',
+            description: 'Вставьте JSON код диаграммы ниже:',
+            cancel: 'Отменить',
+            import: 'Импортировать',
+            error: {
+                title: 'Ошибка при импорте диаграммы',
+                description:
+                    'Код JSON диаграммы некорректен. Проверьте, пожалуйста, код и попробуйте снова. Проблема не решается? Напишите нам: chartdb.io@gmail.com',
             },
         },
         relationship_type: {
@@ -369,20 +370,25 @@ export const ru: LanguageTranslation = {
 
         table_node_context_menu: {
             edit_table: 'Изменить таблицу',
+            duplicate_table: 'Duplicate Table', // TODO: Translate
             delete_table: 'Удалить таблицу',
         },
 
         copy_to_clipboard: 'Скопировать в буфер обмена',
         copied: 'Скопировано!',
-        // TODO: Add translations
-        snap_to_grid_tooltip: 'Snap to Grid (Hold {{key}})',
+        snap_to_grid_tooltip: 'Выравнивание по сетке (Удерживайте {{key}})',
         tool_tips: {
             double_click_to_edit: 'Кликните дважды, чтобы изменить',
+        },
+
+        language_select: {
+            change_language: 'Сменить язык',
         },
     },
 };
 
 export const ruMetadata: LanguageMetadata = {
     name: 'Russian',
+    nativeName: 'Русский',
     code: 'ru',
 };

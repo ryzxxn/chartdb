@@ -28,7 +28,6 @@ export const uk: LanguageTranslation = {
                 show_cardinality: 'Показати кардинальність',
                 zoom_on_scroll: 'Збільшити прокручування',
                 theme: 'Тема',
-                change_language: 'Мова',
                 show_dependencies: 'Показати залежності',
                 hide_dependencies: 'Приховати залежності',
             },
@@ -145,6 +144,7 @@ export const uk: LanguageTranslation = {
                         change_schema: 'Змінити схему',
                         add_field: 'Додати поле',
                         add_index: 'Додати індекс',
+                        duplicate_table: 'Duplicate Table', // TODO: Translate
                         delete_table: 'Видалити таблицю',
                     },
                 },
@@ -343,6 +343,11 @@ export const uk: LanguageTranslation = {
             format_json: 'JSON',
             cancel: 'Cancel',
             export: 'Export',
+            error: {
+                title: 'Error exporting diagram',
+                description:
+                    'Something went wrong. Need help? chartdb.io@gmail.com',
+            },
         },
         // TODO: Translate
         import_diagram_dialog: {
@@ -370,6 +375,7 @@ export const uk: LanguageTranslation = {
 
         table_node_context_menu: {
             edit_table: 'Редагувати таблицю',
+            duplicate_table: 'Duplicate Table', // TODO: Translate
             delete_table: 'Видалити таблицю',
         },
 
@@ -379,10 +385,15 @@ export const uk: LanguageTranslation = {
         tool_tips: {
             double_click_to_edit: 'Двойной клик для редактирования',
         },
+
+        language_select: {
+            change_language: 'Мова',
+        },
     },
 };
 
 export const ukMetadata: LanguageMetadata = {
-    name: 'Українська',
+    name: 'Ukrainian',
+    nativeName: 'Українська',
     code: 'uk',
 };

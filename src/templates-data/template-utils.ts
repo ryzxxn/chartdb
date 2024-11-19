@@ -1,11 +1,12 @@
 import type { Diagram } from '@/lib/domain/diagram';
 import type { Template } from './templates-data';
-import { cloneDiagram, generateId, removeDups } from '@/lib/utils';
+import { removeDups } from '@/lib/utils';
+import { cloneDiagram } from '@/lib/clone';
 
 export const convertTemplateToNewDiagram = (template: Template): Diagram => {
     const diagramId = template.diagram.id;
 
-    const clonedDiagram = cloneDiagram(template.diagram, generateId);
+    const clonedDiagram = cloneDiagram(template.diagram);
 
     return {
         ...template.diagram,
@@ -33,7 +34,9 @@ export const getTemplatesAndAllTags = async ({
 
     if (tag) {
         return {
-            templates: templates.filter((t) => t.tags.includes(tag)),
+            templates: templates.filter((t) =>
+                t.tags.some((t) => t.toLowerCase() === tag.toLowerCase())
+            ),
             tags: allTags,
         };
     }
